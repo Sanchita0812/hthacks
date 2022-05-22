@@ -67,28 +67,38 @@
                             <p>Fill out the form with details about your field and click enter to find crops which would grow optimally in your farm.</p>
                             <div class="contact-form">
                                 <form method="POST" action="/crop">
-                                    <p>
-                                        <input type="text" placeholder="Nitrogen Levels" name="nitrogen" id="nitrogen">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="Potassium Levels" name="potassium" id="potassium">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="Phosphorous Levels" name="phosphorous" id="phosphorous">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="Humidity" name="humidity" id="humidity">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="Rainfall" name="rainfall" id="rainfall">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="pH Levels" name="ph" id="ph">
-                                    </p>
-                                    <p>
-                                        <input type="text" placeholder="Temperature" name="temp" id="temp">
-                                    </p>
-                                    <p>Your recommended crops are {{ crop_val }}</p>
+                                    <div class="row" style="width:40%; margin:auto;">
+                                        <div class="col-lg-6">
+                                            <p>
+                                                <input type="text" placeholder="Nitrogen Levels" name="nitrogen" id="nitrogen">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Potassium Levels" name="potassium" id="potassium">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Phosphorous Levels" name="phosphorous" id="phosphorous">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Humidity" name="humidity" id="humidity">
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>
+                                                <input type="text" placeholder="Rainfall" name="rainfall" id="rainfall">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="pH Levels" name="ph" id="ph">
+                                            </p>
+                                            <p>
+                                                <input type="text" placeholder="Temperature" name="temp" id="temp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                    {% if crop_val != '' %}
+                                    <p>Your recommended crops are <a href="/shop?crop_type={{ crop_val }}">{{ crop_val }}</a></p>
+                                    {% endif %}
                                     <p><input type="submit" value="Submit"></p>
                                     
                                 </form>

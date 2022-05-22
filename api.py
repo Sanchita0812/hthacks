@@ -28,9 +28,9 @@ def calculate_crops(nitrogen: int = Form(), potassium: int = Form(), phosphorous
     print(nitrogen, potassium, phosphorous, humidity, rainfall, ph, temp)
     return "/crop?crop=" + ml([[nitrogen, potassium, phosphorous, humidity, rainfall, ph, temp]])[0]
 
-@app.get("/shop", response_class=FileResponse)
-def shop():
-    return FileResponse("templates/shop.html")
+@app.get("/shop", response_class=HTMLResponse)
+def shop(request: Request, crop: str = ""):
+    return templates.TemplateResponse("shop.html", {"request": request, "crop_type": crop})
 
 
 def ml(data):
