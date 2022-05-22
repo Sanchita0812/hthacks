@@ -32,8 +32,8 @@
 							<ul>
 								<li><a style="padding-left: 75px;" href="/">Home</a></li>
 								<li><a href="/about">About</a></li>
-								<li class="current-list-item"><a href="/crop">Predict Crops</a></li>
-                                <li><a href="/fertilizer">Predict Fertilizer</a></li>
+								<li><a href="/crop">Predict Crops</a></li>
+								<li class="current-list-item"><a href="/fertilizer">Predict Fertilizer</a></li>
 								<li><a href="/shop">Purchase Crops</a></li>
 								<li></li>
 							</ul>
@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb-text">
-                        <p>Find the best crops</p>
+                        <p>Find the best fertilizer</p>
                         <h1>Enter your field details</h1>
                     </div>
                 </div>
@@ -64,11 +64,11 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="error-text">
-                            <h1>Field Conditions</h1>
-{% if crop_val == '' %}
-                            <p style="width: 60%; margin: auto;">Fill out the form with details about your field and click enter to find crops which would grow optimally in your farm.</p>
+                            <h1>Field<span class="big-text"> Conditions</span></h1>
+{% if fert_val == '' %}
+                            <!-- <p style="width: 60%; font-family: 'Poppins'; margin: auto;">Enter Field Details</p> -->
                             <div class="contact-form">
-                                <form method="POST" action="/crop">
+                                <form method="POST" action="/fertilizer">
                                     <div class="row" style="width:60%; margin:auto;">
                                         <div class="col-lg-6">
                                             <div class="form__group">
@@ -91,12 +91,16 @@
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form__group">
-                                                <input type="text" class="form__field" placeholder="Rainfall" name="rainfall" id="rainfall">
-                                                <label for="rainfall" class="form__label">Rainfall</label>
+                                                <input type="text" class="form__field" placeholder="Moisture" name="moisture" id="moisture">
+                                                <label for="moisture" class="form__label">Moisture</label>
                                             </div>
                                             <div class="form__group">
-                                                <input type="text" class="form__field" placeholder="pH" name="ph" id="ph">
-                                                <label for="ph" class="form__label">pH</label>
+                                                <input type="text" class="form__field" placeholder="Soil Type" name="soil" id="soil">
+                                                <label for="soil" class="form__label">Soil Type</label>
+                                            </div>
+                                            <div class="form__group">
+                                                <input type="text" class="form__field" placeholder="Crop Type" name="crop" id="crop">
+                                                <label for="crop" class="form__label">Crop Type</label>
                                             </div>
                                             <div class="form__group">
                                                 <input type="text" class="form__field" placeholder="Temperature" name="temp" id="temp">
@@ -108,15 +112,13 @@
 
                                     <p><input type="submit" value="Submit"></p>
 {% else %}
-                                    <p style="font-family: 'Poppins'; width: 60%; margin: auto;">Your recommended crop is</p>
+                                    <p style="font-family: 'Poppins'; width: 60%; margin: auto;">Your recommended fertilizer is</p>
                                     <div class="text-center">
                                         <div class="crop-rec">
-                                            <h3> {{ crop_val }} </h3>
+                                            <h3> {{ fert_val }} </h3>
                                             <div class="crop-img">
-                                                <a><img src="/static/assets/img/products/{{ crop_val }}.jpg" alt=""></a>
-                                            </div>
-                                            
-                                            <a href="/shop?crop_type={{ crop_val }}" class="cart-btn"><i class="fas fa-shopping-cart"></i>Go to Shop</a>
+                                                <a><img src="/static/assets/img/fertilizer.jpg" alt=""></a>
+                                            </div>                                            
                                         </div>
                                     </div>
 {% endif %}
