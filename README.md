@@ -35,10 +35,16 @@ etc.
   <li> BootStrap </li>
 </ul>
 
+## Demonstration 
+![](assets/FarmEasyRecording__online-video-cutter_com__AdobeCreativeCloudExpress.gif)
+<hr>
+The website can be accessed from < a href= "https://farmeasycrops.herokuapp.com/"> here. </a> 
+<hr>
+
 
   
 
 
 
 
-This project has been made for  High Tech Hacks 2.0
+<b> <u>This project has been made for  High Tech Hacks 2.0 organised by the Society of Hispanic Professional Engineers of High Tech High School, Secaucus, New Jersey.  </u> </b> 
