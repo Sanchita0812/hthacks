@@ -38,7 +38,7 @@ etc.
 ## Demonstration 
 ![](assets/FarmEasyRecording__online-video-cutter_com__AdobeCreativeCloudExpress.gif)
 <hr>
-The website can be accessed from < a href= "https://farmeasycrops.herokuapp.com/"> here. </a> 
+The website can be accessed from <a href= "https://farmeasycrops.herokuapp.com/"> here.</a> 
 <hr>
 
 
