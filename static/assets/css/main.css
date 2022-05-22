@@ -470,6 +470,47 @@ input[type="submit"] {
   margin-right: 30px;
 }
 
+.crop-rec {
+  width: 30%;
+  height: 40%;
+  
+  margin:auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  -webkit-box-shadow: 0 0 20px #e4e4e4;
+  box-shadow: 0 0 20px #e4e4e4;
+  transition: 0.4s;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+
+.crop-rec h3 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 35px;
+  margin-bottom: 0px;
+}
+
+.crop-img {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.crop-img img {
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.crop-rec a {
+  font-size: 1.02rem!important;
+  padding: 10px 25px!important;
+}
+
+.crop-rec i {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
 
 .product-image {
   padding: 30px;
@@ -567,221 +608,8 @@ input[type="number"] {
 }
 
 
-ul.product-share {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul.product-share li {
-  display: inline-block;
-}
-
-ul.product-share li a {
-  display: block;
-  color: #051922;
-  margin-right: 10px;
-}
-
 .single-product-content {
   margin-left: 30px;
-}
-
-table.cart-table {
-  border: 1px solid #f9f9f9;
-  width: 100%;
-}
-
-thead {
-  border-bottom: 1px solid #eee;
-}
-
-tr.table-head-row th {
-  border-right: 1px solid #efefef;
-  padding: 15px;
-  font-weight: 500;
-  text-align: center;
-}
-
-tr.table-head-row th:last-child {
-  border-right: none;
-}
-
-.cart-table-wrap tbody tr td {
-  text-align: center;
-}
-
-td.product-image img {
-  max-width: 50px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin-bottom: 0;
-}
-
-.cart-table-wrap tbody tr td {
-  border: 1px solid #efefef;
-  padding: 20px 0;
-  color: #051922;
-}
-
-thead.cart-table-head tr {
-  background-color: #efefef;
-}
-
-td.product-quantity input {
-  margin-bottom: 0;
-}
-
-td.product-remove a {
-  color: #051922;
-}
-
-.total-section table.total-table {
-  border: 1px solid #efefef;
-  width: 100%;
-}
-
-tr.table-total-row {
-  background-color: #efefef;
-}
-
-tr.table-total-row th {
-  font-weight: 500;
-  font-size: 15px;
-  padding: 15px;
-}
-
-table.total-table tbody tr.total-data td {
-  border: 1px solid #efefef;
-  padding: 19px 15px;
-}
-
-tr.total-data td strong {
-  margin-right: 32px;
-}
-
-.cart-buttons {
-  margin-top: 30px;
-}
-
-.cart-buttons a:first-child {
-  margin-right: 20px;
-}
-
-.coupon-section {
-  margin-top: 50px;
-}
-
-.coupon-section h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.coupon-form-wrap form p input[type=text] {
-  border: 1px solid #ddd;
-  color: #051922;
-  padding: 15px;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 15px;
-}
-
-.card.single-accordion {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #EFEFEF !important;
-}
-
-.card.single-accordion .card-header {
-  background-color: #fff;
-  border: none;
-  padding: 0;
-}
-
-.card.single-accordion:last-child {
-  margin-bottom: 0;
-}
-
-.card.single-accordion .card-header h5 button {
-  color: #051922;
-  font-size: 15px;
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 20px;
-  text-decoration: none;
-  border: none;
-  background-color: #EFEFEF;
-  position: relative;
-  padding-left: 50px;
-  font-weight: 600;
-}
-
-.card.single-accordion {
-  border: 1px solid #F9F9F9;
-}
-
-.billing-address-form {
-  padding: 20px;
-}
-
-.billing-address-form form p input {
-  border: 1px solid #ddd;
-  padding: 15px;
-  width: 100%;
-  border-radius: 3px;
-}
-
-.billing-address-form form p textarea {
-  width: 100%;
-  border-radius: 3px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  height: 120px;
-  resize: none;
-}
-
-.shipping-address-form p, .card-details p {
-  margin: 0;
-}
-
-.card.single-accordion .card-header h5 button:before {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  content: "\f058";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  line-height: 22px;
-  margin-top: -11px;
-  color: #F28123;
-}
-
-.billing-address-form form p:last-child {
-  margin-bottom: 0;
-}
-
-table.order-details {
-  border: 1px solid #efefef;
-}
-
-table.order-details thead tr th {
-  background-color: #efefef;
-  padding: 18px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-table.order-details tbody td {
-  border: 1px solid #efefef;
-  padding: 15px;
-}
-
-.order-details-wrap > a {
-  margin-top: 30px;
-}
-
-.card.single-accordion {
-  border: 1px solid #eeeeee;
 }
 
 .single-product-item {
