@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Crop Detecion</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/assets/css/main.css">
+</head>
+<body>
+
+        
+    <div class="top-header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="main-menu-wrap">
+						<div class="site-logo">
+							<a href="/">
+								<img src="/static/assets/img/logo1.png" alt="">
+							</a>
+						</div>
+
+						<nav class="main-menu">
+							<ul>
+								<li><a style="padding-left: 75px;" href="/">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li class="current-list-item"><a href="/crop">Detect</a></li>
+								<li><a href="/shop">Purchase Crops</a></li>
+								<li></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+            
+    <div class="breadcrumb-section crop-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <p>Find the best crops</p>
+                        <h1>Enter your field details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-height-section error-section">
+        <div class="full-height-tablecell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="error-text">
+                            <h1>Field Conditions</h1>
+                            <p>Fill out the form with details about your field and click enter to find crops which would grow optimally in your farm.</p>
+                            <div class="contact-form">
+                                <form method="POST" action="/crop">
+                                    <p>
+                                        <input type="text" placeholder="Nitrogen Levels" name="nitrogen" id="nitrogen">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="Potassium Levels" name="potassium" id="potassium">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="Phosphorous Levels" name="phosphorous" id="phosphorous">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="Humidity" name="humidity" id="humidity">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="Rainfall" name="rainfall" id="rainfall">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="pH Levels" name="ph" id="ph">
+                                    </p>
+                                    <p>
+                                        <input type="text" placeholder="Temperature" name="temp" id="temp">
+                                    </p>
+                                    <p>Your recommended crops are {{ crop_val }}</p>
+                                    <p><input type="submit" value="Submit"></p>
+                                    
+                                </form>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+							<li>support@fruitkha.com</li>
+							<li>+00 111 222 3333</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about.html">About</a></li>
+							<li><a href="/shop.html">Shop</a></li>
+							<li><a href="/crop">Detect</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
