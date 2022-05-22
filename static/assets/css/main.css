@@ -847,3 +847,48 @@ table.order-details tbody td {
 .abt-text p:last-child {
   margin-bottom: 0;
 }
+
+
+.shop-banner {
+  position: relative;
+  background-color: #1e3044;
+  background-size: cover;
+  background-image: linear-gradient(rgba(7, 33, 46, 0.6),rgba(7, 33, 46, 0.5)), url(../img/crops.jpg);
+  
+  padding: 110px 0px 115px;
+}
+
+.shop-banner h3 {
+  position: relative;
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 1.2em;
+  margin-bottom: 7px;
+}
+
+.shop-banner h4 {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+a.cart2-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  background-color: #179C0D;
+  color: #fff;
+  padding: 10px 35px;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+a.cart2-btn:hover {
+  background-color: #126c0c;
+}

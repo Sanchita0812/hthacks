@@ -19,8 +19,6 @@ def home():
 
 @app.get('/crop', response_class=HTMLResponse)
 def calculate_crops(request: Request, crop: str = ""):
-
-
     return templates.TemplateResponse("crop.html", {"request": request, "crop_val": crop})
 
 @app.post('/crop', response_class=RedirectResponse, status_code=302)
